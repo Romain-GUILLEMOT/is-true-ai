@@ -12,7 +12,7 @@ async function isTrueAI(value) {
       messages: [
         {
           role: "system",
-          content: "You are a truth evaluator. Respond only with 'true' or 'false'."
+          content: "You are a truth evaluator. Respond only with 'true' or 'false'. Entry value is coming from JavaScript."
         },
         {
           role: "user",

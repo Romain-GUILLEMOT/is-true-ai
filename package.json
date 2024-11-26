@@ -1,6 +1,6 @@
 {
   "name": "is-true-ai",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "determine if given value is true using AI",
   "main": "index.js",
   "scripts": {
