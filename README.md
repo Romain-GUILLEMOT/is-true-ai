@@ -8,18 +8,18 @@ A lightweight utility to detect if given value is true using AI.
 npm install is-true-ai
 ```
 
-## Environment Variables
+## Initialize
 
-Create a `.env` file and add your OpenAI API key:
+```typescript
+import { initializeOpenAI } from 'is-true-ai';
 
-```bash
-OPENAI_API_KEY=your_openai_api_key
+initializeOpenAI({ apiKey: process.env.OPENAI_API_KEY }); // use your own OpenAI API key
 ```
 
 ## Usage
 
-```javascript
-const isTrueAI = require('is-true-ai');
+```typescript
+import { isTrueAI } from 'is-true-ai';
 
 isTrueAI(true) // true
 isTrueAI(false) // false
@@ -31,5 +31,3 @@ isTrueAI(null) // false
 isTrueAI({}) // false
 isTrueAI([]) // false
 ```
-
-Note that returned value is not 100% accurate. It's a best effort guess. Also its a promise so you need to handle it. Good luck!
